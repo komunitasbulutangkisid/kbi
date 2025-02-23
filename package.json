@@ -1,0 +1,20 @@
+{
+  "name": "company-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:sass serve",
+    "serve": "live-server",
+    "watch:sass": "sass --watch scss/main.scss:css/style.css",
+    "build:sass": "sass scss/main.scss:css/style.css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.58.0"
+  }
+}

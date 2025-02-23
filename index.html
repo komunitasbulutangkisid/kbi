@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Zool">
+	<title>Company Profile</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+
+		.b-example-divider {
+			width: 100%;
+			height: 3rem;
+			background-color: rgba(0, 0, 0, .1);
+			border: solid rgba(0, 0, 0, .15);
+			border-width: 1px 0;
+			box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+		}
+
+		.b-example-vr {
+			flex-shrink: 0;
+			width: 1.5rem;
+			height: 100vh;
+		}
+
+		.bi {
+			vertical-align: -.125em;
+			fill: currentColor;
+		}
+
+		.nav-scroller {
+			position: relative;
+			z-index: 2;
+			height: 2.75rem;
+			overflow-y: hidden;
+		}
+
+		.nav-scroller .nav {
+			display: flex;
+			flex-wrap: nowrap;
+			padding-bottom: 1rem;
+			margin-top: -1px;
+			overflow-x: auto;
+			text-align: center;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		.btn-bd-primary {
+			--bd-violet-bg: #712cf9;
+			--bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+			--bs-btn-font-weight: 600;
+			--bs-btn-color: var(--bs-white);
+			--bs-btn-bg: var(--bd-violet-bg);
+			--bs-btn-border-color: var(--bd-violet-bg);
+			--bs-btn-hover-color: var(--bs-white);
+			--bs-btn-hover-bg: #6528e0;
+			--bs-btn-hover-border-color: #6528e0;
+			--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+			--bs-btn-active-color: var(--bs-btn-hover-color);
+			--bs-btn-active-bg: #5a23c8;
+			--bs-btn-active-border-color: #5a23c8;
+		}
+
+		.bd-mode-toggle {
+			z-index: 1500;
+		}
+
+		.bd-mode-toggle .dropdown-menu .active .bi {
+			display: block !important;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar sticky-top navbar-expand-lg">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="./assets/images/KBI Logo.png" alt="Logo" height="75" class="d-inline-block align-text-top">
+			</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto me-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Tentang KBI</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hall of Fame</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Galeri</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Produk</a>
+					</li>
+				</ul>
+
+				<button class="btn btn-danger" type="submit">
+					Gabung Jadi Member KBI <i class="fa-solid fa-arrow-right"></i>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero -->
+	<div class="position-relative hero-section">
+		<img src="./assets/images/BERANDA.jpeg" class="img-fluid" alt="Beranda">
+		<div class="position-absolute top-0 start-0 w-100 h-100">
+			<svg class="w-100 h-100" preserveAspectRatio="none">
+				<defs>
+					<linearGradient id="hero-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" style="stop-color: rgba(0,0,0,0.7)" />
+						<stop offset="100%" style="stop-color: rgba(0,0,0,0.3)" />
+					</linearGradient>
+				</defs>
+				<rect width="100%" height="100%" fill="url(#hero-gradient)" />
+			</svg>
+			<div class="position-absolute top-50 start-50 translate-middle w-100">
+				<img src="./assets/images/element.svg" class="img-fluid" alt="Overlay Element">
+			</div>
+			<div class="position-absolute top-50 start-50 translate-middle w-100 text-white">
+				<div class="container">
+					<h1 class="display-3 fw-bold mb-4">Semangat bersama,<br />raih juara!</h1>
+					<p class="mb-5">Gabung, Berlatih, Menang Bersama - Komunitas Bulutangkis untuk Semua!</p>
+					<button class="btn btn-danger">
+						Gabung Jadi Member KBI <i class="fa-solid fa-arrow-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
