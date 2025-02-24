@@ -35,6 +35,22 @@ body {
 }
 
 .navbar {
+  transition: all 0.3s ease;
+  background-color: transparent;
+  &.sticky-top {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &:not(.sticky-top) {
+    background-color: transparent;
+    box-shadow: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
   .navbar-nav {
     .nav-link {
       font-family: "DM Sans", sans-serif;
