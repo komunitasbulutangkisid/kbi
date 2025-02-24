@@ -11955,8 +11955,7 @@ body {
   padding-block-start: 140px;
   padding-block-end: 140px;
 }
-
-#about .title {
+.section .title {
   letter-spacing: 0.30375rem;
 }
 
