@@ -30,10 +30,22 @@
   font-display: swap;
 }
 
+body {
+  letter-spacing: calc($font-size-base * 0.02);
+}
+
 .navbar {
   .navbar-nav {
     .nav-link {
       font-family: "DM Sans", sans-serif;
     }
+  }
+}
+
+#about {
+  padding-block-start: 140px;
+  padding-block-end: 140px;
+  .title {
+    letter-spacing: calc($font-size-base * 0.27);
   }
 }

@@ -77,7 +77,7 @@
   --bs-body-font-family: "Inter", sans-serif;
   --bs-body-font-size: 1.125rem;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.7;
+  --bs-body-line-height: 1.66666667;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg: #fff;
@@ -2347,7 +2347,7 @@ textarea.form-control-lg {
 
 .form-check {
   display: block;
-  min-height: 1.9125rem;
+  min-height: 1.8750000037rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -2372,7 +2372,7 @@ textarea.form-control-lg {
   flex-shrink: 0;
   width: 1em;
   height: 1em;
-  margin-top: 0.35em;
+  margin-top: 0.333333335em;
   vertical-align: top;
   appearance: none;
   background-color: var(--bs-form-check-bg);
@@ -5445,7 +5445,7 @@ textarea.form-control-lg {
   --bs-modal-header-padding: 1rem 1rem;
   --bs-modal-header-border-color: var(--bs-border-color);
   --bs-modal-header-border-width: var(--bs-border-width);
-  --bs-modal-title-line-height: 1.7;
+  --bs-modal-title-line-height: 1.66666667;
   --bs-modal-footer-gap: 0.5rem;
   --bs-modal-footer-bg: ;
   --bs-modal-footer-border-color: var(--bs-border-color);
@@ -5738,7 +5738,7 @@ textarea.form-control-lg {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.66666667;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -5848,7 +5848,7 @@ textarea.form-control-lg {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.66666667;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -6258,7 +6258,7 @@ textarea.form-control-lg {
   --bs-offcanvas-border-color: var(--bs-border-color-translucent);
   --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
   --bs-offcanvas-transition: transform 0.3s ease-in-out;
-  --bs-offcanvas-title-line-height: 1.7;
+  --bs-offcanvas-title-line-height: 1.66666667;
 }
 
 @media (max-width: 575.98px) {
@@ -8352,7 +8352,7 @@ textarea.form-control-lg {
 }
 
 .lh-base {
-  line-height: 1.7 !important;
+  line-height: 1.66666667 !important;
 }
 
 .lh-lg {
@@ -11925,8 +11925,20 @@ textarea.form-control-lg {
   font-style: italic;
   font-display: swap;
 }
+body {
+  letter-spacing: 0.0225rem;
+}
+
 .navbar .navbar-nav .nav-link {
   font-family: "DM Sans", sans-serif;
+}
+
+#about {
+  padding-block-start: 140px;
+  padding-block-end: 140px;
+}
+#about .title {
+  letter-spacing: 0.30375rem;
 }
 
 /*# sourceMappingURL=style.css.map */
