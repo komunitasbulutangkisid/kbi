@@ -6980,6 +6980,18 @@ textarea.form-control-lg {
   --bs-aspect-ratio: 42.8571428571%;
 }
 
+.ratio-3x4 {
+  --bs-aspect-ratio: 133.3333333333%;
+}
+
+.ratio-9x16 {
+  --bs-aspect-ratio: 177.7777777778%;
+}
+
+.ratio-9x21 {
+  --bs-aspect-ratio: 233.3333333333%;
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -11959,8 +11971,14 @@ body {
   letter-spacing: 0.30375rem;
 }
 
-#hall-of-fame .hof-kbi-logo {
-  max-width: 208px;
+#hall-of-fame #hof-list {
+  --bs-gutter-x: 3rem;
+  --bs-gutter-y: 3rem;
+}
+
+#founder #founder-list {
+  --bs-gutter-x: 10rem;
+  --bs-gutter-y: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */

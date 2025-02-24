@@ -67,7 +67,15 @@ body {
 }
 
 #hall-of-fame {
-  .hof-kbi-logo {
-    max-width: 208px;
+  #hof-list {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+}
+
+#founder {
+  #founder-list {
+    --bs-gutter-x: 10rem;
+    --bs-gutter-y: 10rem;
   }
 }
