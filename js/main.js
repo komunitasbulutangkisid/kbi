@@ -3,51 +3,51 @@ const hofList = document.getElementById("hof-list");
 const hofData = [
   {
     name: "Ade Chandra",
-    image: "./../assets/images/hall-of-fame/ade-chandra.png",
+    image: "./assets/images/hall-of-fame/ade-chandra.png",
   },
   {
     name: "Christian Hadinata",
-    image: "./../assets/images/hall-of-fame/christian-hadinata.png",
+    image: "./assets/images/hall-of-fame/christian-hadinata.png",
   },
   {
     name: "Eddy Kurniawan",
-    image: "./../assets/images/hall-of-fame/eddy-kurniawan.png",
+    image: "./assets/images/hall-of-fame/eddy-kurniawan.png",
   },
   {
     name: "Icuk Sugiarto",
-    image: "./../assets/images/hall-of-fame/icuk-sugiarto.png",
+    image: "./assets/images/hall-of-fame/icuk-sugiarto.png",
   },
   {
     name: "Imelda Wiguna",
-    image: "./../assets/images/hall-of-fame/imelda-wiguna.png",
+    image: "./assets/images/hall-of-fame/imelda-wiguna.png",
   },
   {
     name: "Kartono H. Atmanto",
-    image: "./../assets/images/hall-of-fame/kartono-h-atmanto.png",
+    image: "./assets/images/hall-of-fame/kartono-h-atmanto.png",
   },
   {
     name: "Liem Swie King",
-    image: "./../assets/images/hall-of-fame/liem-swie-king.png",
+    image: "./assets/images/hall-of-fame/liem-swie-king.png",
   },
   {
     name: "Liliyana Natsir",
-    image: "./../assets/images/hall-of-fame/liliyana-natsir.png",
+    image: "./assets/images/hall-of-fame/liliyana-natsir.png",
   },
   {
     name: "Rudy Hartono",
-    image: "./../assets/images/hall-of-fame/rudy-hartono.png",
+    image: "./assets/images/hall-of-fame/rudy-hartono.png",
   },
   {
     name: "Rudy Heryanto",
-    image: "./../assets/images/hall-of-fame/rudy-heryanto.png",
+    image: "./assets/images/hall-of-fame/rudy-heryanto.png",
   },
   {
     name: "Tan Joe Hok",
-    image: "./../assets/images/hall-of-fame/tan-joe-hok.png",
+    image: "./assets/images/hall-of-fame/tan-joe-hok.png",
   },
   {
     name: "Tantowi Ahmad",
-    image: "./../assets/images/hall-of-fame/tantowi-ahmad.png",
+    image: "./assets/images/hall-of-fame/tantowi-ahmad.png",
   },
 ];
 
