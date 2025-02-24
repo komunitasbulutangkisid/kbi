@@ -22,7 +22,7 @@
 	<nav class="navbar sticky-top navbar-expand-lg">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<img src="./assets/images/KBI Logo.png" alt="Logo" height="75" class="d-inline-block align-text-top">
+				<img src="./assets/images/kbi-logo.png" alt="Logo" height="75" class="d-inline-block align-text-top">
 			</a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -82,7 +82,7 @@
 	</div>
 
 	<!-- About -->
-	<div id="about" class="position-relative">
+	<div id="about" class="section position-relative">
 		<div class="z-n1 position-absolute top-50 start-50 translate-middle w-100">
 			<img src="./assets/images/about-bg.svg" class="img-fluid" alt="Overlay Element">
 		</div>
@@ -114,8 +114,89 @@
 		</div>
 	</div>
 
+	<!-- Hall of Fame -->
+	<div id="hall-of-fame" class="section">
+		<div class="container">
+			<div class="hof-kbi-logo ratio ratio-16x9 ms-auto me-auto mb-5">
+				<img class="object-fit-cover" src="./assets/images/kbi-logo.png" alt="KBI Logo">
+			</div>
+			<h1 class="display-2 lh-sm fw-bold text-center mb-5">
+				KBI Hall of Fame
+			</h1>
+			<div id="hof-list" class="row row-cols-1 row-cols-md-4 g-5">
+				<!-- Content will be dynamically populated by JavaScript -->
+			</div>
+		</div>
+	</div>
+
 	<script src="./js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		const hofList = document.getElementById('hof-list');
+		const hofData = [
+			{
+				name: 'Ade Chandra',
+				image: './assets/images/hall-of-fame/ade-chandra.png'
+			},
+			{
+				name: 'Christian Hadinata',
+				image: './assets/images/hall-of-fame/christian-hadinata.png'
+			},
+			{
+				name: 'Eddy Kurniawan',
+				image: './assets/images/hall-of-fame/eddy-kurniawan.png'
+			},
+			{
+				name: "Icuk Sugiarto",
+				image: './assets/images/hall-of-fame/icuk-sugiarto.png'
+			},
+			{
+				name: "Imelda Wiguna",
+				image: './assets/images/hall-of-fame/imelda-wiguna.png'
+			},
+			{
+				name: "Kartono H. Atmanto",
+				image: './assets/images/hall-of-fame/kartono-h-atmanto.png'
+			},
+			{
+				name: "Liem Swie King",
+				image: './assets/images/hall-of-fame/liem-swie-king.png'
+			},
+			{
+				name: "Liliyana Natsir",
+				image: './assets/images/hall-of-fame/liliyana-natsir.png'
+			},
+			{
+				name: "Rudy Hartono",
+				image: './assets/images/hall-of-fame/rudy-hartono.png'
+			},
+			{
+				name: "Rudy Heryanto",
+				image: './assets/images/hall-of-fame/rudy-heryanto.png'
+			},
+			{
+				name: "Tan Joe Hok",
+				image: './assets/images/hall-of-fame/tan-joe-hok.png'
+			},
+			{
+				name: "Tantowi Ahmad",
+				image: './assets/images/hall-of-fame/tantowi-ahmad.png'
+			}
+		];
+
+		hofData.forEach(data => {
+			const hofItem = document.createElement('div');
+			hofItem.classList.add('col');
+			const hofItemFrame = document.createElement('div');
+			hofItemFrame.classList.add('ratio');
+			hofItemFrame.classList.add('ratio-1x1');
+			hofItem.appendChild(hofItemFrame);
+			hofItemFrame.innerHTML = `
+				<img class="object-fit-cover" src="${data.image}" alt="${data.name}">
+			`;
+			hofList.appendChild(hofItem);
+		});
+	</script>
 </body>
 
 </html>

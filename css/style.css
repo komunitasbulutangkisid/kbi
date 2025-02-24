@@ -11933,12 +11933,17 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-#about {
+.section {
   padding-block-start: 140px;
   padding-block-end: 140px;
 }
+
 #about .title {
   letter-spacing: 0.30375rem;
+}
+
+#hall-of-fame .hof-kbi-logo {
+  max-width: 208px;
 }
 
 /*# sourceMappingURL=style.css.map */

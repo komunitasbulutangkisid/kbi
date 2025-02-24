@@ -42,10 +42,19 @@ body {
   }
 }
 
-#about {
+.section {
   padding-block-start: 140px;
   padding-block-end: 140px;
+}
+
+#about {
   .title {
     letter-spacing: calc($font-size-base * 0.27);
+  }
+}
+
+#hall-of-fame {
+  .hof-kbi-logo {
+    max-width: 208px;
   }
 }
