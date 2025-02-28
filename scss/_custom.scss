@@ -79,3 +79,108 @@ body {
     --bs-gutter-y: 10rem;
   }
 }
+
+#membership-registration {
+  .registration-flow {
+    --circle-gap: 1rem;
+    --container-width: calc(100vw - (var(--bs-gutter-x) * 2));
+    @include media-breakpoint-up(sm) {
+      --container-width: 540px;
+    }
+
+    @include media-breakpoint-up(md) {
+      --circle-gap: 2rem;
+      --container-width: 720px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      --circle-gap: 4rem;
+      --container-width: 960px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      --container-width: 1140px;
+    }
+
+    $circle-gap: var(--circle-gap);
+    $circle-size: calc((var(--container-width) - ($circle-gap * 2)) / 3);
+    $circle-dash-number: 24; /* control the number of dashes */
+    $circle-dash-distance: 8deg; /* control the distance between dashes */
+    $circle-dash-thickness: 4px; /* control the thickness of border*/
+    $circle-dash-color: $danger; /* control the coloration */
+
+    position: relative;
+    padding: 2rem 0;
+
+    .registration-step {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-inline-end: $circle-gap;
+      }
+
+      // Arrow between steps
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: calc($circle-size / 2);
+        right: -$circle-gap;
+        width: $circle-gap;
+        height: $circle-dash-thickness;
+        background-color: $danger; // Solid line instead of dashed
+        transform: translateY(-50%); // Center the line vertically
+      }
+
+      // Arrow head
+      &:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        right: calc($circle-gap * -1);
+        top: calc($circle-size / 2);
+        width: 12px;
+        height: 12px;
+        border-top: $circle-dash-thickness solid $danger;
+        border-right: $circle-dash-thickness solid $danger;
+        transform: translateY(-50%) rotate(45deg);
+        background-color: white;
+      }
+
+      .circle {
+        width: $circle-size;
+        padding: calc($circle-size / 4);
+        aspect-ratio: 1;
+        display: inline-grid;
+        place-content: center;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          padding: $circle-dash-thickness;
+          background: $circle-dash-color;
+          mask:
+            linear-gradient(#0000 0 0) content-box intersect,
+            repeating-conic-gradient(
+              from calc($circle-dash-distance / 2),
+              #000 0 calc(360deg / $circle-dash-number - $circle-dash-distance),
+              #0000 0 calc(360deg / $circle-dash-number)
+            );
+        }
+
+        h5 {
+          @include media-breakpoint-down(lg) {
+            font-size: calc($h5-font-size * 0.75);
+          }
+          @include media-breakpoint-down(md) {
+            font-size: calc($h5-font-size * 0.5);
+          }
+          @include media-breakpoint-down(sm) {
+            font-size: calc($h5-font-size * 0.4);
+          }
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
