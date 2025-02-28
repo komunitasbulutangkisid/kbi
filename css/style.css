@@ -11997,8 +11997,20 @@ body {
 }
 
 #founder #founder-list {
-  --bs-gutter-x: 10rem;
-  --bs-gutter-y: 10rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+}
+@media (min-width: 992px) {
+  #founder #founder-list {
+    --bs-gutter-x: 5rem;
+    --bs-gutter-y: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #founder #founder-list {
+    --bs-gutter-x: 10rem;
+    --bs-gutter-y: 10rem;
+  }
 }
 
 #membership-registration-flow .registration-flow {

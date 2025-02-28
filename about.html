@@ -70,7 +70,9 @@
 					</div>
 					<div class="col-lg-6 col-xl-7">
 						<div class="ratio ratio-16x9">
-							<img class="object-fit-cover" src="./assets/images/tan-joe-hok-photo.jpeg" alt="Tan Joe Hok">
+							<video class="object-fit-cover" controls>
+								<source src="./assets/videos/sejarah-kbi.mp4" type="video/mp4">
+							</video>
 						</div>
 					</div>
 				</div>
@@ -78,7 +80,7 @@
 
 			<div class="section">
 				<div class="row align-items-center g-5">
-					<div class="col-lg-5 col-xl-4">
+					<div class="d-none d-lg-block col-lg-5 col-xl-4">
 						<div class="ratio ratio-3x4">
 							<img class="object-fit-cover" src="./assets/images/tan-joe-hok-photo.jpeg" alt="Tan Joe Hok">
 						</div>
@@ -91,6 +93,13 @@
 								<img src="./assets/images/section-heading-abstract.svg" class="img-fluid" alt="Heading Abstract">
 							</div>
 						</h1>
+						<div class="d-lg-none row my-5">
+							<div class="col-12 col-md-8">
+								<div class="ratio ratio-3x4">
+									<img class="object-fit-cover" src="./assets/images/tan-joe-hok-photo.jpeg" alt="Tan Joe Hok">
+								</div>
+							</div>
+						</div>
 						<p>
 							Dari mimpi Tan Joe Hok sejak tahun 1977, peraih trofi All England pertama untuk Indonesia bercerita adanya
 							masalah mengenai <b>perbedaan dan hak kewarganegaraan</b>, kemudian terbesit keinginan <b>membentuk suatu
@@ -147,7 +156,7 @@
 	<div class="section">
 		<div class="container">
 			<div class="row align-items-center g-5">
-				<div class="col-lg-6">
+				<div class="d-none d-lg-block col-lg-6">
 					<div class="ratio ratio-3x4">
 						<img class="object-fit-cover" src="./assets/images/hariyanto-arbi-photo.png" alt="Hariyanto Arbi">
 					</div>
@@ -162,6 +171,13 @@
 					<h1 class="display-2 lh-sm fw-bold mb-4">
 						KBI Kini
 					</h1>
+					<div class="d-lg-none row my-5">
+						<div class="col-12 col-md-8">
+							<div class="ratio ratio-3x4">
+								<img class="object-fit-cover" src="./assets/images/hariyanto-arbi-photo.png" alt="Hariyanto Arbi">
+							</div>
+						</div>
+					</div>
 					<p>Kini <b>Hariyanto Arbi</b> telah meneruskan perjuangan <b>Tan Joe Hok</b> sebagai Ketua Komunitas
 						Bulutangkis Indonesia.
 					</p>
@@ -198,13 +214,13 @@
 	</div>
 
 	<!-- Footer -->
-	<footer class="section pb-5">
+	<footer class="section pb-0 pb-md-5">
 		<div class="container">
-			<div class="row border-bottom pb-5">
-				<div class="col-12 col-lg-4 align-self-center">
+			<div class="row border-bottom pb-5 g-4">
+				<div class="col-12 col-md-12 col-lg-3 col-xl-4 align-self-center">
 					<img src="./assets/images/kbi-logo.png" alt="KBI Logo" height="75">
 				</div>
-				<div class="col-12 col-lg-4">
+				<div class="col-12 col-md-6 col-lg-5 col-xl-4">
 					<nav class="nav flex-column">
 						<a class="nav-link disabled fw-bold" aria-disabled="true">Komunitas Bulutangkis Indonesia</a>
 						<a class="nav-link py-1 fw-normal" href="#">
@@ -218,7 +234,7 @@
 						</a>
 					</nav>
 				</div>
-				<div class="col-12 col-lg-4">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4">
 					<nav class="nav flex-column">
 						<a class="nav-link disabled fw-bold" aria-disabled="true">Kontak Kami</a>
 						<a class="nav-link py-1 fw-normal" href="tel:+6281218129221">
@@ -230,14 +246,23 @@
 					</nav>
 				</div>
 			</div>
-			<div class="d-flex align-items-center py-3">
-				<a class="text-black text-decoration-none me-5" href="#">
-					<small>Terms & privacy</small>
-				</a>
-				<small class="me-auto">©2025 Komunitas Bulutangkis Indonesia</small>
-				<a class="text-black text-decoration-none" href="#">
-					<i class="fab fa-facebook-f"></i>
-				</a>
+			<div class="d-flex w-100 flex-column flex-md-row align-items-start py-3">
+				<div class="w-100 d-flex flex-column flex-sm-row me-md-auto align-items-start align-items-sm-end mb-3">
+					<a class="text-black text-decoration-none me-auto me-md-5" href="#">
+						<small>
+							Terms & privacy
+						</small>
+					</a>
+					<small>©2025 Komunitas Bulutangkis Indonesia</small>
+				</div>
+				<div class="d-flex align-self-center align-self-md-start">
+					<a class="text-black text-decoration-none me-2" href="#">
+						<i class="fa-brands fa-square-facebook fa-lg"></i>
+					</a>
+					<a class="text-black text-decoration-none" href="#">
+						<i class="fa-brands fa-square-x-twitter fa-lg"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</footer>

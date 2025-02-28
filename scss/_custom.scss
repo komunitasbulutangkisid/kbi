@@ -93,8 +93,16 @@ $navbar-height: 7rem;
 
 #founder {
   #founder-list {
-    --bs-gutter-x: 10rem;
-    --bs-gutter-y: 10rem;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+    @include media-breakpoint-up(lg) {
+      --bs-gutter-x: 5rem;
+      --bs-gutter-y: 5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      --bs-gutter-x: 10rem;
+      --bs-gutter-y: 10rem;
+    }
   }
 }
 
