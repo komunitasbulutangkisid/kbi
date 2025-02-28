@@ -34,9 +34,12 @@ body {
   letter-spacing: calc($font-size-base * 0.02);
 }
 
+$navbar-height: 7rem;
+
 .navbar {
   transition: all 0.3s ease;
   background-color: transparent;
+  height: $navbar-height;
   &.sticky-top {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -61,8 +64,23 @@ body {
 .section {
   padding-block-start: 140px;
   padding-block-end: 140px;
+  overflow-x: hidden;
   .title {
     letter-spacing: calc($font-size-base * 0.27);
+  }
+}
+
+#hero {
+  @media (orientation: landscape) {
+    min-height: 650px;
+    height: calc(100vh - $navbar-height);
+  }
+  @media (orientation: portrait) {
+    min-height: 500px;
+    height: calc(100vh - $navbar-height);
+    @include media-breakpoint-up(md) {
+      height: unset;
+    }
   }
 }
 
@@ -80,7 +98,7 @@ body {
   }
 }
 
-#membership-registration {
+#membership-registration-flow {
   .registration-flow {
     --circle-gap: 1rem;
     --container-width: calc(100vw - (var(--bs-gutter-x) * 2));

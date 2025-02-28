@@ -54,8 +54,8 @@
 	</nav>
 
 	<!-- Hero -->
-	<div class="position-relative hero-section">
-		<img src="./assets/images/BERANDA.jpeg" class="img-fluid" alt="Beranda">
+	<div id="hero" class="position-relative">
+		<img src="./assets/images/BERANDA.jpeg" class="h-100 w-100 img-fluid object-fit-cover" alt="Beranda">
 		<div class="position-absolute top-0 start-0 w-100 h-100">
 			<svg class="w-100 h-100" preserveAspectRatio="none">
 				<defs>
@@ -67,7 +67,7 @@
 				<rect width="100%" height="100%" fill="url(#hero-gradient)" />
 			</svg>
 			<div class="position-absolute top-50 start-50 translate-middle w-100">
-				<img src="./assets/images/hero-abstract.svg" class="img-fluid" alt="Abstract">
+				<img src="./assets/images/hero-abstract.svg" class="img-fluid w-100" alt="Abstract">
 			</div>
 			<div class="position-absolute top-50 start-50 translate-middle w-100 text-white">
 				<div class="container">
@@ -96,6 +96,13 @@
 							<img src="./assets/images/section-heading-abstract.svg" class="img-fluid" alt="Heading Abstract">
 						</div>
 					</h1>
+					<div class="d-lg-none row my-5">
+						<div class="col-12 col-md-8">
+							<div class="ratio ratio-4x3">
+								<img class="object-fit-cover" src="./assets/images/tan-joe-hok-photo.png" alt="Tan Joe Hok">
+							</div>
+						</div>
+					</div>
 					<p class="mb-5">
 						Dari mimpi Tan Joe Hok sejak tahun 1977, peraih trofi All England pertama untuk Indonesia
 						bercerita adanya masalah mengenai perbedaan dan hak kewarganegaraan, kemudian terbesit keinginan membentuk
@@ -105,7 +112,7 @@
 						Lihat Tentang KBI
 					</a>
 				</div>
-				<div class="col-lg-6">
+				<div class="d-none d-lg-block col-lg-6">
 					<div class="ratio ratio-4x3">
 						<img class="object-fit-cover" src="./assets/images/tan-joe-hok-photo.png" alt="Tan Joe Hok">
 					</div>
@@ -133,9 +140,9 @@
 	<div id="membership-program" class="section position-relative">
 		<div class="container">
 			<div class="row align-items-center g-5">
-				<div class="col-lg-6">
+				<div class="d-none d-lg-block col-lg-6">
 					<div class="ratio ratio-4x3">
-						<img class="object-fit-cover" src="./assets/images/membership-program-photo.png" alt="About">
+						<img class="object-fit-cover" src="./assets/images/membership-program-photo.png" alt="Member">
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -146,6 +153,13 @@
 							<img src="./assets/images/section-heading-abstract.svg" class="img-fluid" alt="Heading Background">
 						</div>
 					</h1>
+					<div class="d-lg-none row my-5">
+						<div class="col-12 col-md-8">
+							<div class="ratio ratio-4x3">
+								<img class="object-fit-cover" src="./assets/images/membership-program-photo.png" alt="Member">
+							</div>
+						</div>
+					</div>
 					<p>
 						Komunitas Bulutangkis Indonesia meluncurkan program membership untuk penggemar bulutangkis di Indonesia!
 					</p>
@@ -154,8 +168,8 @@
 		</div>
 	</div>
 
-	<!-- Membership Registration -->
-	<div id="membership-registration" class="section">
+	<!-- Membership Registration Flow -->
+	<div id="membership-registration-flow" class="section pb-0">
 		<div class="container overflow-hidden">
 			<p class="title fw-medium text-center">MEMBERSHIP</p>
 			<h1 class="display-2 lh-sm fw-bold text-center mb-5">
@@ -184,30 +198,51 @@
 	</div>
 
 	<!-- Membership Benefit -->
-	<div id="membership-benefit" class="section">
-		<div class="container">
+	<div id="membership-benefit" class="section overflow-hidden">
+		<div class="container-fluid">
 			<p class="title fw-medium text-center">MEMBERSHIP</p>
 			<h1 class="display-2 lh-sm fw-bold text-center mb-5">
-				Manfaat KBI Membership
+				Program Membership KBI
 			</h1>
-			<div class="row row-cols-1 row-cols-md-3 g-5">
-				<div class="col py-4">
-					<h5 class="fw-bold text-danger text-center">Info Tiket Bulutangkis</h5>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+				<div class="col">
+					<div class="card bg-danger border-danger text-white py-3 rounded-3 h-100">
+						<div class="card-body p-5">
+							<h4 class="fw-bold text-center mb-4">Main Bareng Legend</h4>
+							<p class="text-center">Melalui program ini, penggemar memiliki kesempatan untuk bermain, berlatih, dan
+								berinteraksi langsung
+								dengan mantan atlet profesional, sehingga dapat meningkatkan keterampilan dan pemahaman mereka tentang
+								bulutangkis.</p>
+						</div>
+					</div>
 				</div>
-				<div class="col py-4">
-					<h5 class="fw-bold text-danger text-center">Diskon Merchandise KBI</h5>
+				<div class="col">
+					<div class="card bg-danger border-danger text-white py-3 rounded-3 h-100">
+						<div class="card-body p-5">
+							<h4 class="fw-bold text-center mb-4">Latihan Bareng Legend</h4>
+							<p class="text-center">Tujuan utama dari program ini adalah untuk menginspirasi dan mengembangkan bakat
+								muda dalam olahraga bulutangkis melalui bimbingan langsung dari para mantan atlet profesional.</p>
+						</div>
+					</div>
 				</div>
-				<div class="col py-4">
-					<h5 class="fw-bold text-danger text-center">Diskon Produk Flypower</h5>
+				<div class="col">
+					<div class="card bg-danger border-danger text-white py-3 rounded-3 h-100">
+						<div class="card-body p-5">
+							<h4 class="fw-bold text-center mb-4">Kumpul Bareng Legend</h4>
+							<p class="text-center">Melalui acara ini, penggemar memiliki kesempatan untuk berinteraksi langsung,
+								belajar, dan terinspirasi dari pengalaman para mantan atlet profesional.</p>
+						</div>
+					</div>
 				</div>
-				<div class="col py-4">
-					<h5 class="fw-bold text-danger text-center">Coaching Clinic Legend</h5>
-				</div>
-				<div class="col py-4">
-					<h5 class="fw-bold text-danger text-center">Main dengan Legend</h5>
-				</div>
-				<div class="col py-4">
-					<h5 class="fw-bold text-danger text-center">Kumpul dengan Legend</h5>
+				<div class="col">
+					<div class="card bg-danger border-danger text-white py-3 rounded-3 h-100">
+						<div class="card-body p-5">
+							<h4 class="fw-bold text-center mb-4">Sertifikasi Kepelatihan</h4>
+							<p class="text-center">Program "Sertifikasi Kepelatihan" dalam komunitas bulutangkis Indonesia adalah
+								inisiatif yang dirancang untuk meningkatkan kualitas dan kompetensi para pelatih bulutangkis di tanah
+								air.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -237,52 +272,55 @@
 	</div>
 
 	<!-- Footer -->
-	<footer class="section pb-5">
+	<footer class="section pb-0 pb-md-5">
 		<div class="container">
-			<div class="row align-items-center border-bottom pb-5">
-				<div class="col-12 col-lg-4">
+			<div class="row border-bottom pb-5 g-4">
+				<div class="col-12 col-md-12 col-lg-3 col-xl-4 align-self-center">
 					<img src="./assets/images/kbi-logo.png" alt="KBI Logo" height="75">
 				</div>
-				<div class="col-12 col-lg-4">
+				<div class="col-12 col-md-6 col-lg-5 col-xl-4">
 					<nav class="nav flex-column">
-						<a class="nav-link disabled fw-bold" aria-disabled="true">Product</a>
+						<a class="nav-link disabled fw-bold" aria-disabled="true">Komunitas Bulutangkis Indonesia</a>
 						<a class="nav-link py-1 fw-normal" href="#">
-							<small>Overview</small>
+							<small>Tentang KBI</small>
 						</a>
 						<a class="nav-link py-1 fw-normal" href="#">
-							<small>Pricing</small>
+							<small>Membership KBI</small>
 						</a>
 						<a class="nav-link py-1 fw-normal" href="#">
-							<small>Customer stories</small>
+							<small>Hall of Fame</small>
 						</a>
 					</nav>
 				</div>
-				<div class="col-12 col-lg-4">
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4">
 					<nav class="nav flex-column">
-						<a class="nav-link disabled fw-bold" aria-disabled="true">Company</a>
-						<a class="nav-link py-1 fw-normal" href="#">
-							<small>About us</small>
+						<a class="nav-link disabled fw-bold" aria-disabled="true">Kontak Kami</a>
+						<a class="nav-link py-1 fw-normal" href="tel:+6281218129221">
+							<small>+62 812-1812-9221</small>
 						</a>
-						<a class="nav-link py-1 fw-normal" href="#">
-							<small>Careers</small>
-						</a>
-						<a class="nav-link py-1 fw-normal" href="#">
-							<small>Media kit</small>
+						<a class="nav-link py-1 fw-normal" href="mailto:social@kbi.id">
+							<small>social@kbi.id</small>
 						</a>
 					</nav>
 				</div>
 			</div>
-			<div class="d-flex align-items-center py-3">
-				<a class="text-black text-decoration-none me-5" href="#">
-					<small>Terms & privacy</small>
-				</a>
-				<small class="me-auto">©2025 Komunitas Bulutangkis Indonesia</small>
-				<a class="text-black text-decoration-none me-5" href="#">
-					<i class="fab fa-facebook-f"></i>
-				</a>
-				<a class="text-black text-decoration-none" href="#">
-					<i class="fab fa-twitter"></i>
-				</a>
+			<div class="d-flex w-100 flex-column flex-md-row align-items-start py-3">
+				<div class="w-100 d-flex flex-column flex-sm-row me-md-auto align-items-start align-items-sm-end mb-3">
+					<a class="text-black text-decoration-none me-auto me-md-5" href="#">
+						<small>
+							Terms & privacy
+						</small>
+					</a>
+					<small>©2025 Komunitas Bulutangkis Indonesia</small>
+				</div>
+				<div class="d-flex align-self-center align-self-md-start">
+					<a class="text-black text-decoration-none me-2" href="#">
+						<i class="fa-brands fa-square-facebook fa-lg"></i>
+					</a>
+					<a class="text-black text-decoration-none" href="#">
+						<i class="fa-brands fa-square-x-twitter fa-lg"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</footer>

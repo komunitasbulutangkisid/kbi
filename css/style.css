@@ -250,11 +250,11 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: calc(1.29375rem + 0.525vw);
+  font-size: calc(1.35rem + 1.2vw);
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.6875rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -8308,7 +8308,7 @@ textarea.form-control-lg {
 }
 
 .fs-4 {
-  font-size: calc(1.29375rem + 0.525vw) !important;
+  font-size: calc(1.35rem + 1.2vw) !important;
 }
 
 .fs-5 {
@@ -11868,7 +11868,7 @@ textarea.form-control-lg {
     font-size: 1.96875rem !important;
   }
   .fs-4 {
-    font-size: 1.6875rem !important;
+    font-size: 2.25rem !important;
   }
   .fs-5 {
     font-size: 1.5rem !important;
@@ -11944,6 +11944,7 @@ body {
 .navbar {
   transition: all 0.3s ease;
   background-color: transparent;
+  height: 7rem;
 }
 .navbar.sticky-top {
   background-color: rgba(255, 255, 255, 0.8);
@@ -11966,9 +11967,28 @@ body {
 .section {
   padding-block-start: 140px;
   padding-block-end: 140px;
+  overflow-x: hidden;
 }
 .section .title {
   letter-spacing: 0.30375rem;
+}
+
+@media (orientation: landscape) {
+  #hero {
+    min-height: 650px;
+    height: calc(100vh - 7rem);
+  }
+}
+@media (orientation: portrait) {
+  #hero {
+    min-height: 500px;
+    height: calc(100vh - 7rem);
+  }
+}
+@media (orientation: portrait) and (min-width: 768px) {
+  #hero {
+    height: unset;
+  }
 }
 
 #hall-of-fame #hof-list {
@@ -11981,7 +12001,7 @@ body {
   --bs-gutter-y: 10rem;
 }
 
-#membership-registration .registration-flow {
+#membership-registration-flow .registration-flow {
   --circle-gap: 1rem;
   --container-width: calc(100vw - (var(--bs-gutter-x) * 2));
   /* control the number of dashes */
@@ -11992,34 +12012,34 @@ body {
   padding: 2rem 0;
 }
 @media (min-width: 576px) {
-  #membership-registration .registration-flow {
+  #membership-registration-flow .registration-flow {
     --container-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  #membership-registration .registration-flow {
+  #membership-registration-flow .registration-flow {
     --circle-gap: 2rem;
     --container-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  #membership-registration .registration-flow {
+  #membership-registration-flow .registration-flow {
     --circle-gap: 4rem;
     --container-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  #membership-registration .registration-flow {
+  #membership-registration-flow .registration-flow {
     --container-width: 1140px;
   }
 }
-#membership-registration .registration-flow .registration-step {
+#membership-registration-flow .registration-flow .registration-step {
   position: relative;
 }
-#membership-registration .registration-flow .registration-step:not(:last-child) {
+#membership-registration-flow .registration-flow .registration-step:not(:last-child) {
   margin-inline-end: var(--circle-gap);
 }
-#membership-registration .registration-flow .registration-step:not(:last-child)::after {
+#membership-registration-flow .registration-flow .registration-step:not(:last-child)::after {
   content: "";
   position: absolute;
   top: calc((var(--container-width) - var(--circle-gap) * 2) / 3 / 2);
@@ -12029,7 +12049,7 @@ body {
   background-color: #BA0000;
   transform: translateY(-50%);
 }
-#membership-registration .registration-flow .registration-step:not(:last-child)::before {
+#membership-registration-flow .registration-flow .registration-step:not(:last-child)::before {
   content: "";
   position: absolute;
   right: calc(var(--circle-gap) * -1);
@@ -12041,7 +12061,7 @@ body {
   transform: translateY(-50%) rotate(45deg);
   background-color: white;
 }
-#membership-registration .registration-flow .registration-step .circle {
+#membership-registration-flow .registration-flow .registration-step .circle {
   width: calc((var(--container-width) - var(--circle-gap) * 2) / 3);
   padding: calc((var(--container-width) - var(--circle-gap) * 2) / 3 / 4);
   aspect-ratio: 1;
@@ -12049,7 +12069,7 @@ body {
   place-content: center;
   position: relative;
 }
-#membership-registration .registration-flow .registration-step .circle::after {
+#membership-registration-flow .registration-flow .registration-step .circle::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -12058,21 +12078,21 @@ body {
   background: #BA0000;
   mask: linear-gradient(rgba(0, 0, 0, 0) 0 0) content-box intersect, repeating-conic-gradient(from 4deg, #000 0 7deg, rgba(0, 0, 0, 0) 0 15deg);
 }
-#membership-registration .registration-flow .registration-step .circle h5, #membership-registration .registration-flow .registration-step .circle .h5 {
+#membership-registration-flow .registration-flow .registration-step .circle h5, #membership-registration-flow .registration-flow .registration-step .circle .h5 {
   margin-bottom: 0 !important;
 }
 @media (max-width: 991.98px) {
-  #membership-registration .registration-flow .registration-step .circle h5, #membership-registration .registration-flow .registration-step .circle .h5 {
+  #membership-registration-flow .registration-flow .registration-step .circle h5, #membership-registration-flow .registration-flow .registration-step .circle .h5 {
     font-size: 1.125rem;
   }
 }
 @media (max-width: 767.98px) {
-  #membership-registration .registration-flow .registration-step .circle h5, #membership-registration .registration-flow .registration-step .circle .h5 {
+  #membership-registration-flow .registration-flow .registration-step .circle h5, #membership-registration-flow .registration-flow .registration-step .circle .h5 {
     font-size: 0.75rem;
   }
 }
 @media (max-width: 575.98px) {
-  #membership-registration .registration-flow .registration-step .circle h5, #membership-registration .registration-flow .registration-step .circle .h5 {
+  #membership-registration-flow .registration-flow .registration-step .circle h5, #membership-registration-flow .registration-flow .registration-step .circle .h5 {
     font-size: 0.6rem;
   }
 }
