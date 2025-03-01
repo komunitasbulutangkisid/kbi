@@ -5518,7 +5518,7 @@ textarea.form-control-lg {
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
-  --bs-backdrop-opacity: 0.5;
+  --bs-backdrop-opacity: 0.9;
   position: fixed;
   top: 0;
   left: 0;
@@ -6721,7 +6721,7 @@ textarea.form-control-lg {
   opacity: 0;
 }
 .offcanvas-backdrop.show {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .offcanvas-header {
@@ -11992,8 +11992,26 @@ body {
 }
 
 #hall-of-fame #hof-list {
-  --bs-gutter-x: 3rem;
-  --bs-gutter-y: 3rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
+}
+@media (min-width: 992px) {
+  #hall-of-fame #hof-list {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+}
+#hall-of-fame #hof-list .hof-frame {
+  overflow: hidden;
+}
+#hall-of-fame #hof-list .hof-frame img {
+  transition: transform 0.3s ease;
+}
+#hall-of-fame #hof-list .hof-frame:hover {
+  opacity: 0.8;
+}
+#hall-of-fame #hof-list .hof-frame:hover img {
+  transform: scale(1.1);
 }
 
 #founder #founder-list {
