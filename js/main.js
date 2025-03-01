@@ -1,3 +1,36 @@
+// Navbar sticky behavior
+const navbar = document.querySelector(".navbar");
+const aboutSection = document.querySelector("#about");
+
+if (navbar && aboutSection) {
+  // Debounce function to limit the rate of scroll event handling
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  const handleScroll = debounce(() => {
+    const aboutTop = aboutSection.offsetTop;
+    const scrollPosition = window.scrollY;
+    const offset = 112; // Add offset for smoother transition
+
+    if (scrollPosition >= aboutTop - offset) {
+      navbar.classList.remove("sticky-top");
+    } else {
+      navbar.classList.add("sticky-top");
+    }
+  }, 10);
+
+  window.addEventListener("scroll", handleScroll);
+}
+
 // Hall of Fame rendering
 const hofList = document.getElementById("hof-list");
 // Check if the hall of fame list exists
@@ -122,35 +155,66 @@ if (hofList) {
   });
 }
 
-// Navbar sticky behavior
-const navbar = document.querySelector(".navbar");
-const aboutSection = document.querySelector("#about");
+// Gallery rendering
+const galleryImageContainer = document.getElementById(
+  "gallery-image-container"
+);
+// Check if the gallery container exists
+if (galleryImageContainer) {
+  const galleryData = [
+    "./assets/images/gallery/104C37E1-1F34-4677-A209-DD755A9CC321.jpg",
+    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.12.03 (2).jpg",
+    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.20 (2).jpg",
+    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.32.jpg",
+    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.33 (1).jpg",
+    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.34 (1).jpg",
+    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.35.jpg",
+    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.36 (1).jpg",
+    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.36.jpg",
+    "./assets/images/gallery/WhatsApp Image 2024-01-06 at 10.15.31 (1).jpg",
+    "./assets/images/gallery/WhatsApp Image 2024-02-01 at 14.07.06 (1).jpg",
+  ];
 
-if (navbar && aboutSection) {
-  // Debounce function to limit the rate of scroll event handling
-  function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-      const later = () => {
-        clearTimeout(timeout);
-        func(...args);
-      };
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-    };
-  }
+  // Create modal container
+  const modalContainer = document.createElement("div");
+  modalContainer.innerHTML = `
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body text-center position-relative p-0">
+            <button type="button" class="btn btn-link p-4 text-white position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-circle-xmark fa-xl"></i>
+            </button>
+            <img src="" alt="Gallery Image" class="img-fluid w-100 rounded-2" id="galleryModalImage">
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modalContainer);
 
-  const handleScroll = debounce(() => {
-    const aboutTop = aboutSection.offsetTop;
-    const scrollPosition = window.scrollY;
-    const offset = 112; // Add offset for smoother transition
+  // Render gallery images
+  galleryData.forEach((imagePath) => {
+    const galleryFrame = document.createElement("div");
+    galleryFrame.classList.add("gallery-image-frame");
+    galleryFrame.style.cursor = "pointer";
 
-    if (scrollPosition >= aboutTop - offset) {
-      navbar.classList.remove("sticky-top");
-    } else {
-      navbar.classList.add("sticky-top");
-    }
-  }, 10);
+    galleryFrame.innerHTML = `
+      <div class="ratio ratio-16x9 rounded-2">
+        <img src="${imagePath}" class="object-fit-cover" alt="Gallery Image">
+      </div>
+    `;
 
-  window.addEventListener("scroll", handleScroll);
+    // Add click event listener
+    galleryFrame.addEventListener("click", () => {
+      const modal = new bootstrap.Modal(
+        document.getElementById("galleryModal")
+      );
+      const modalImage = document.getElementById("galleryModalImage");
+      modalImage.src = imagePath;
+      modal.show();
+    });
+
+    galleryImageContainer.appendChild(galleryFrame);
+  });
 }

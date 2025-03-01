@@ -1,8 +1,55 @@
-// Variables (overide Bootstrap variables here)
+@use "sass:map";
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "./bootstrap/functions";
+
+// 2. Include any default variable overrides here
 @import "./variables";
 
-// Bootstrap
-@import "./bootstrap/bootstrap";
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "./bootstrap/variables";
+// @import "./bootstrap/variables-dark";
 
-// Custom
+// 4. Include map overrides here (if any)
+
+// 5. Include remainder of required parts
+@import "./bootstrap/maps";
+@import "./bootstrap/mixins";
+@import "./bootstrap/root";
+
+// 6. Optionally include any other parts as needed
+@import "./bootstrap/root";
+@import "./bootstrap/reboot";
+@import "./bootstrap/type";
+@import "./bootstrap/images";
+@import "./bootstrap/containers";
+@import "./bootstrap/grid";
+@import "./bootstrap/buttons";
+@import "./bootstrap/transitions";
+@import "./bootstrap/nav";
+@import "./bootstrap/navbar";
+@import "./bootstrap/card";
+@import "./bootstrap/modal";
+@import "./bootstrap/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "./bootstrap/utilities";
+@import "./bootstrap/utilities/api";
+
+// 8. Generate required utility classes
+$utilities: map.merge(
+  $utilities,
+  (
+    "display": map.get($utilities, "display"),
+    "flex": map.get($utilities, "flex"),
+    "position": map.get($utilities, "position"),
+    "spacing": map.get($utilities, "spacing"),
+    "text": map.get($utilities, "text"),
+    "background": map.get($utilities, "background"),
+    "border": map.get($utilities, "border"),
+    "sizing": map.get($utilities, "sizing")
+  )
+);
+
+// 9. Custom styles
 @import "./custom";
