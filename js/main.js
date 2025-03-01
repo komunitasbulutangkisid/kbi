@@ -40,12 +40,6 @@ if (hofList) {
         "./assets/images/hall-of-fame/pop-up/POP UP - IMELDA WIGUNA.jpg",
     },
     {
-      name: "Kartono H. Atmanto",
-      image: "./assets/images/hall-of-fame/kartono-h-atmanto.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - KARTONO H. ATMANTO.jpg",
-    },
-    {
       name: "Liem Swie King",
       image: "./assets/images/hall-of-fame/liem-swie-king.png",
       popupImage:
