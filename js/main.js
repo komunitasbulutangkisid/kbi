@@ -150,17 +150,17 @@ const galleryImageContainer = document.getElementById(
 // Check if the gallery container exists
 if (galleryImageContainer) {
   const galleryData = [
-    "./assets/images/gallery/104C37E1-1F34-4677-A209-DD755A9CC321.jpg",
-    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.12.03 (2).jpg",
-    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.20 (2).jpg",
-    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.32.jpg",
-    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.33 (1).jpg",
-    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.34 (1).jpg",
-    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.35.jpg",
-    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.36 (1).jpg",
-    "./assets/images/gallery/WhatsApp Image 2023-12-27 at 20.19.36.jpg",
-    "./assets/images/gallery/WhatsApp Image 2024-01-06 at 10.15.31 (1).jpg",
-    "./assets/images/gallery/WhatsApp Image 2024-02-01 at 14.07.06 (1).jpg",
+    "./assets/images/gallery/a557tgdgajxgc2hbsy43.avif",
+    "./assets/images/gallery/ahbxsrrpy3peh5adhbzs.avif",
+    "./assets/images/gallery/ahezx373khc9xozpvamj.avif",
+    "./assets/images/gallery/bilw8ezpiwoefatoorja.avif",
+    "./assets/images/gallery/btttoj1asjte2hsig4cr.avif",
+    "./assets/images/gallery/gtcgqh3ypgc1tq4glnup.avif",
+    "./assets/images/gallery/hminajnavfstopz0al8n.avif",
+    "./assets/images/gallery/hqfapjw3td7zhtsdhjo3.avif",
+    "./assets/images/gallery/jsdecgqcs1ragmu3rmpn.avif",
+    "./assets/images/gallery/xgj4nafad3j9snksqs77.avif",
+    "./assets/images/gallery/xynd89f5hxtrnjntl1wx.avif",
   ];
 
   // Create modal container

@@ -5,27 +5,27 @@ if (founderList) {
   const founderData = [
     {
       name: "TAN JOE HOK",
-      image: "./assets/images/founder/tan-joe-hok.png",
+      image: "./assets/images/founder/Tan-Joe-Hok.avif",
     },
     {
       name: "GANDI SULIS",
-      image: "./assets/images/founder/gandi-sulis.png",
+      image: "./assets/images/founder/Gandi-Sulis.avif",
     },
     {
       name: "TAN THIAM BENG",
-      image: "./assets/images/founder/tan-thiam-beng.png",
+      image: "./assets/images/founder/Tan-Thiam-Beng.avif",
     },
     {
       name: "IVANA LIE",
-      image: "./assets/images/founder/ivana-lie.png",
+      image: "./assets/images/founder/Ivana-Lie.avif",
     },
     {
       name: "RUDY HERYANTO",
-      image: "./assets/images/founder/rudy-heryanto.png",
+      image: "./assets/images/founder/Rudy-Heryanto.avif",
     },
     {
       name: "HADIWIBOWO SUSANTO",
-      image: "./assets/images/founder/hadiwibowo-susanto.png",
+      image: "./assets/images/founder/Hadiwibowo-Susanto.avif",
     },
   ];
   // Render the hall of fame list
