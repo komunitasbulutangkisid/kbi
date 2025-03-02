@@ -38,75 +38,63 @@ if (hofList) {
   const hofData = [
     {
       name: "Ade Chandra",
-      image: "./assets/images/hall-of-fame/ade-chandra.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - ADE CHANDRA.jpg",
+      image: "./assets/images/hall-of-fame/Ade-Chandra.avif",
+      popupImage: "./assets/images/hall-of-fame/Ade-Chandra-Pop-Up.avif",
     },
     {
       name: "Christian Hadinata",
-      image: "./assets/images/hall-of-fame/christian-hadinata.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - CHRISTIAN HADINATA.jpg",
+      image: "./assets/images/hall-of-fame/Christian-Hadinata.avif",
+      popupImage: "./assets/images/hall-of-fame/Christian-Hadinata-Pop-Up.avif",
     },
     {
       name: "Alan Budi Kusuma",
-      image: "./assets/images/hall-of-fame/alan-budi-kusuma.jpg",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - ALAN BUDI KUSUMA.jpg",
+      image: "./assets/images/hall-of-fame/Alan-Budi-Kusuma.avif",
+      popupImage: "./assets/images/hall-of-fame/Alan-Budi-Kusuma-Pop-Up.avif",
     },
     {
       name: "Susy Susanti",
-      image: "./assets/images/hall-of-fame/susy-susanti.jpg",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - SUSY SUSANTI.jpg",
+      image: "./assets/images/hall-of-fame/Susy-Susanti.avif",
+      popupImage: "./assets/images/hall-of-fame/Susy-Susanti-Pop-Up.avif",
     },
     {
       name: "Icuk Sugiarto",
-      image: "./assets/images/hall-of-fame/icuk-sugiarto.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - ICUK SUGIARTO.jpg",
+      image: "./assets/images/hall-of-fame/Icuk-Sugiarto.avif",
+      popupImage: "./assets/images/hall-of-fame/Icuk-Sugiarto-Pop-Up.avif",
     },
     {
       name: "Imelda Wiguna",
-      image: "./assets/images/hall-of-fame/imelda-wiguna.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - IMELDA WIGUNA.jpg",
+      image: "./assets/images/hall-of-fame/Imelda-Wiguna.avif",
+      popupImage: "./assets/images/hall-of-fame/Imelda-Wiguna-Pop-Up.avif",
     },
     {
       name: "Liem Swie King",
-      image: "./assets/images/hall-of-fame/liem-swie-king.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - LIEM SWIE KING.jpg",
+      image: "./assets/images/hall-of-fame/Liem-Swie-King.avif",
+      popupImage: "./assets/images/hall-of-fame/Liem-Swie-King-Pop-Up.avif",
     },
     {
       name: "Liliyana Natsir",
-      image: "./assets/images/hall-of-fame/liliyana-natsir.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - LILIYANA NATSIR.jpg",
+      image: "./assets/images/hall-of-fame/Liliyana-Natsir.avif",
+      popupImage: "./assets/images/hall-of-fame/Liliyana-Natsir-Pop-Up.avif",
     },
     {
       name: "Rudy Hartono",
-      image: "./assets/images/hall-of-fame/rudy-hartono.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - RUDY HARTONO.jpg",
+      image: "./assets/images/hall-of-fame/Rudy-Hartono.avif",
+      popupImage: "./assets/images/hall-of-fame/Rudy-Hartono-Pop-Up.avif",
     },
     {
-      name: "Rudy Heryanto",
-      image: "./assets/images/hall-of-fame/rudy-heryanto.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - RUDY HERYANTO.jpg",
+      name: "Heryanto Saputra",
+      image: "./assets/images/hall-of-fame/Heryanto-Saputra.avif",
+      popupImage: "./assets/images/hall-of-fame/Heryanto-Saputra-Pop-Up.avif",
     },
     {
       name: "Tan Joe Hok",
-      image: "./assets/images/hall-of-fame/tan-joe-hok.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - TAN JOE HOK.jpg",
+      image: "./assets/images/hall-of-fame/Tan-Joe-Hok.avif",
+      popupImage: "./assets/images/hall-of-fame/Tan-Joe-Hok-Pop-Up.avif",
     },
     {
       name: "Tantowi Ahmad",
-      image: "./assets/images/hall-of-fame/tantowi-ahmad.png",
-      popupImage:
-        "./assets/images/hall-of-fame/pop-up/POP UP - TANTOWI AHMAD.jpg",
+      image: "./assets/images/hall-of-fame/Tantowi-Ahmad.avif",
+      popupImage: "./assets/images/hall-of-fame/Tantowi-Ahmad-Pop-Up.avif",
     },
   ];
 
