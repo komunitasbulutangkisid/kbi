@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Komunitas Bulutangkis Indonesia (KBI) - Wadah bagi penggemar bulutangkis di Indonesia untuk berlatih, berkembang, dan mencapai prestasi bersama legenda bulutangkis nasional.">
+  <meta name="keywords"
+    content="KBI, Komunitas Bulutangkis Indonesia, bulutangkis, badminton, Tan Joe Hok, pelatihan bulutangkis, membership bulutangkis">
+  <meta name="author" content="Komunitas Bulutangkis Indonesia">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kbi.id/">
+  <meta property="og:title" content="Komunitas Bulutangkis Indonesia - Semangat Bersama, Raih Juara!">
+  <meta property="og:description"
+    content="Komunitas Bulutangkis Indonesia (KBI) - Wadah bagi penggemar bulutangkis di Indonesia untuk berlatih, berkembang, dan mencapai prestasi.">
+  <meta property="og:image" content="./assets/images/kbi-logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://kbi.id/">
+  <meta property="twitter:title" content="Komunitas Bulutangkis Indonesia - Semangat Bersama, Raih Juara!">
+  <meta property="twitter:description"
+    content="Komunitas Bulutangkis Indonesia (KBI) - Wadah bagi penggemar bulutangkis di Indonesia untuk berlatih, berkembang, dan mencapai prestasi.">
+  <meta property="twitter:image" content="./assets/images/kbi-logo.png">
+
+  <title>Komunitas Bulutangkis Indonesia - Semangat Bersama, Raih Juara!</title>
+
+  <!-- Add favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <!-- Add touch icon for mobile devices -->
+  <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+
+<body id="register" style="background-color: #f8f9fb;">
+  <div class="container">
+    <div class="p-4">
+      <h1 class="display-5 fw-bold lh-sm text-primary text-center">
+        Pendaftaran Anggota KBI
+      </h1>
+      <p class="text-center">Isi formulir di bawah ini untuk bergabung dengan komunitas bulutangkis terbesar di
+        Indonesia
+      </p>
+    </div>
+
+    <div class="card rounded-3 overflow-hidden mb-5">
+      <div class="card-header bg-light border-top border-bottom-0 border-primary border-4 p-4">
+        <h5 class="fw-bold ls-tight">
+          <div class="circle">1</div> Informasi Pribadi
+        </h5>
+        <p class="mb-0 text-secondary">Masukan data diri Anda dengan benar</p>
+      </div>
+      <div class="card-body border-top p-4">
+        <form>
+          <div class="row row-cols-1 row-cols-md-2 gx-3">
+            <div class="col">
+              <div class="mb-3">
+                <label for="full-name" class="form-label fw-medium">
+                  Nama Lengkap <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="full-name" placeholder="Nama Lengkap">
+              </div>
+              <div class="mb-3">
+                <label for="phone-number" class="form-label fw-medium">
+                  Nomor Telepon <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="phone-number" placeholder="08xxxxxxxxxx">
+              </div>
+              <div class="mb-3">
+                <label for="gender" class="form-label fw-medium">
+                  Jenis Kelamin <span class="text-danger">*</span>
+                </label>
+                <select class="form-select" id="gender" aria-label="Default select example">
+                  <option selected>Pilih jenis kelamin</option>
+                  <option value="1">Laki-laki</option>
+                  <option value="2">Perempuan</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="mb-3">
+                <label for="email" class="form-label fw-medium">
+                  Email <span class="text-danger">*</span>
+                </label>
+                <input type="email" class="form-control" id="email" placeholder="contoh@email.com">
+              </div>
+              <div class="mb-3">
+                <label for="birth-date" class="form-label fw-medium">
+                  Tanggal Lahir <span class="text-danger">*</span>
+                </label>
+                <input type="date" class="form-control" id="birth-date">
+              </div>
+              <div class="mb-3">
+                <label for="level" class="form-label fw-medium">
+                  Level Bermain <span class="text-danger">*</span>
+                </label>
+                <select class="form-select" id="level" aria-label="Default select example">
+                  <option selected>Pilih level bermain</option>
+                  <option value="1">Beginer</option>
+                  <option value="2">Intermediate</option>
+                  <option value="3">Advanced</option>
+                  <option value="4">Professional</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <div class="mb-4">
+            <h5 class="fw-bold ls-tight">
+              <div class="circle">2</div> Alamat
+            </h5>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-12">
+              <label for="full-name" class="form-label fw-medium">
+                Alamat Lengkap <span class="text-danger">*</span>
+              </label>
+              <textarea class="form-control" id="full-name" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="city" class="form-label fw-medium">
+                Kota <span class="text-danger">*</span>
+              </label>
+              <input type="text" class="form-control" id="city" placeholder="Masukan kota">
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <div class="mb-4">
+            <h5 class="fw-bold ls-tight">
+              <div class="circle">3</div> Foto Profil
+            </h5>
+          </div>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">
+              Unggah Foto <small class="text-secondary">(Opsional)</small>
+            </label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+        </form>
+      </div>
+      <div class="card-footer bg-light p-4">
+        <div class="d-flex justify-content-between">
+          <p><span class="text-danger">*</span> Wajib diisi</p>
+          <button type="submit" class="btn btn-lg btn-primary">Lanjutkan ke Pembayaran</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="section pb-0 pb-md-5 bg-white">
+    <div class="container">
+      <div class="row border-bottom pb-5 g-4">
+        <div class="col-12 col-md-12 col-lg-3 col-xl-4 align-self-center">
+          <img src="./assets/images/kbi-logo.png" alt="KBI Logo" height="75">
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+          <nav class="nav flex-column">
+            <a class="nav-link disabled fw-bold" aria-disabled="true">Komunitas Bulutangkis Indonesia</a>
+            <a class="nav-link py-1 fw-normal" href="#">
+              <small>Tentang KBI</small>
+            </a>
+            <a class="nav-link py-1 fw-normal" href="#">
+              <small>Membership KBI</small>
+            </a>
+            <a class="nav-link py-1 fw-normal" href="#">
+              <small>Hall of Fame</small>
+            </a>
+          </nav>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+          <nav class="nav flex-column">
+            <a class="nav-link disabled fw-bold" aria-disabled="true">Kontak Kami</a>
+            <a class="nav-link py-1 fw-normal" href="tel:+6281218129221">
+              <small>+62 812-1812-9221</small>
+            </a>
+            <a class="nav-link py-1 fw-normal" href="mailto:social@kbi.id">
+              <small>social@kbi.id</small>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="d-flex w-100 flex-column flex-md-row align-items-start py-3">
+        <div class="w-100 d-flex flex-column flex-sm-row me-md-auto align-items-start align-items-sm-end mb-3">
+          <a class="text-black text-decoration-none me-auto me-md-5" href="#">
+            <small>
+              Terms & privacy
+            </small>
+          </a>
+          <small>©2025 Komunitas Bulutangkis Indonesia</small>
+        </div>
+        <div class="d-flex align-self-center align-self-md-start">
+          <a class="text-black text-decoration-none me-2" href="#">
+            <i class="fa-brands fa-square-facebook fa-lg"></i>
+          </a>
+          <a class="text-black text-decoration-none" href="#">
+            <i class="fa-brands fa-square-x-twitter fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
