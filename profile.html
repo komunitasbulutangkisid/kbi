@@ -38,7 +38,7 @@
 </head>
 
 <body class="bg-light">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="#">
         <div
@@ -46,7 +46,7 @@
           style="width: 48px; height: 48px;">
           KBI
         </div>
-        Komunitas Bulutangkis Indonesia
+        <span class="d-none d-md-inline">Komunitas Bulutangkis Indonesia</span>
       </a>
 
       <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
@@ -95,30 +95,30 @@
 
   <div class="w-100 bg-primary position-absolute start-0 top-0 z-n1" style="height: 300px;"></div>
 
-  <div class="container">
+  <div id="profile-page" class="container">
     <!-- Card: Profile -->
-    <div class="bg-white p-5 rounded-4 shadow-sm mb-4">
+    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm mb-4">
       <div class="row g-4">
-        <div class="col-12 col-md-4 col-lg-2">
-          <div id="profile-picture-frame" class="position-relative w-100">
-            <div class="ratio ratio-1x1 border border-5 border-primary rounded-circle">
+        <div class="col-auto">
+          <div class="profile-picture-frame position-relative w-100">
+            <div class="border border-5 border-primary rounded-circle">
               <img src="https://www.profilebakery.com/wp-content/uploads/2023/04/LINKEDIN-Profile-Picture-AI.jpg"
-                class="img-fluid rounded-circle" alt="Profile Picture" width="150" height="150" />
+                class="profile-picture img-fluid rounded-circle" alt="Profile Picture" />
             </div>
-            <span
-              class="position-absolute top-50 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+            <span class="membership-status p-2 bg-success border border-light rounded-circle">
               <span class="visually-hidden">Status</span>
             </span>
           </div>
         </div>
-        <div class="col-12 col-md-8 col-lg-10">
+        <div class="col-12 col-md">
           <div class="row g-3 mb-3">
             <div class="col-12 col-md">
               <h3 class="fw-bold mb-0">Budi Santoso</h3>
               <span class="text-secondary">Anggota sejak 23 Juni 2023</span>
             </div>
             <div class="col-12 col-md-auto">
-              <button class="btn btn-primary px-4" type="button">
+              <button class="btn btn-primary px-4" type="button" data-bs-toggle="modal"
+                data-bs-target="#member-card-modal">
                 <i class="fa-solid fa-id-card me-2"></i>Kartu Anggota
               </button>
               <button class="btn btn-outline-secondary" type="button">
@@ -126,7 +126,7 @@
               </button>
             </div>
           </div>
-          <div class="row row-cols-2 row-cols-lg-4 g-3">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
             <div class="col">
               <div class="bg-light rounded-3 p-4">
                 <small class="text-secondary">Level Bermain</small>
@@ -157,9 +157,8 @@
       </div>
     </div>
 
-    <!--  -->
     <div class="row g-4">
-      <!-- Left -->
+
       <div class="col-12 col-lg-8">
         <!-- Card: Personal Information -->
         <div class="card rounded-4 shadow-sm mb-4 overflow-hidden">
@@ -170,7 +169,7 @@
             </h5>
           </div>
           <div class="card-body p-4">
-            <div class="row row-cols-2 g-4 mb-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
               <div class="col">
                 <div class="text-secondary">Nama Lengkap</div>
                 <h6 class="fw-bold">Budi Santoso</h6>
@@ -223,7 +222,6 @@
         </div>
       </div>
 
-      <!-- Right -->
       <div class="col-12 col-lg-4">
         <!-- Card: Benefit -->
         <div class="card rounded-4 shadow-sm mb-4 overflow-hidden">
@@ -301,6 +299,59 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member Modal -->
+  <div class="modal fade" id="member-card-modal" tabindex="-1" aria-labelledby="member-card-modal-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="position-absolute top-50 start-50 translate-middle z-1">
+        <!-- Close Button -->
+        <div class="position-absolute top-0 end-0 p-1 z-1">
+          <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Membership card -->
+        <div class="member-card-container">
+          <div class="member-card p-4">
+            <div class="d-flex flex-column justify-content-between h-100">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h5 class="text-large">Kartu Anggota</h5>
+                  <div class="text-small">Komunitas Bulutangkis Indonesia</div>
+                </div>
+                <div>
+                  <i class="fa-solid fa-circle text-light"></i>
+                  <i class="fa-solid fa-circle text-light text-opacity-75"></i>
+                </div>
+              </div>
+              <div>
+                <div class="mb-2">
+                  <div class="text-small">Nama Anggota</div>
+                  <h5 class="text-large">Budi Santoso</h5>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <div>
+                    <div class="text-small">ID Anggota</div>
+                    <h5 class="text-medium">KBI12345</h5>
+                  </div>
+                  <div>
+                    <div class="text-small">Berlaku Hingga</div>
+                    <h5 class="text-medium">September 2025</h5>
+                  </div>
+                </div>
+                <h5 class="text-medium">
+                  <span class="badge rounded-pill text-bg-light">PREMIUM</span>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
